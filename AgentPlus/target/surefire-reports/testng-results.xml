@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AGENTPLUS TEST REPORTS" duration-ms="92514" started-at="2020-02-03T12:35:50 IST" finished-at="2020-02-03T12:37:23 IST">
+    <groups>
+    </groups>
+    <test name="registration" duration-ms="92514" started-at="2020-02-03T12:35:50 IST" finished-at="2020-02-03T12:37:23 IST">
+      <class name="com.AG.test.automation.testscripts.basic.SearchCustomers">
+        <test-method status="PASS" signature="suiteSetUp()[pri:0, instance:com.AG.test.automation.testscripts.basic.SearchCustomers@6f1fba17]" name="suiteSetUp" is-config="true" duration-ms="386" started-at="2020-02-03T12:35:50 IST" finished-at="2020-02-03T12:35:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetUp -->
+        <test-method status="PASS" signature="initialiseBaseSetup()[pri:0, instance:com.AG.test.automation.testscripts.basic.SearchCustomers@6f1fba17]" name="initialiseBaseSetup" is-config="true" duration-ms="22652" started-at="2020-02-03T12:35:50 IST" finished-at="2020-02-03T12:36:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBaseSetup -->
+        <test-method status="FAIL" signature="listCustomersWithSearch()[pri:0, instance:com.AG.test.automation.testscripts.basic.SearchCustomers@6f1fba17]" name="listCustomersWithSearch" duration-ms="50558" started-at="2020-02-03T12:36:13 IST" finished-at="2020-02-03T12:37:04 IST">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a STRING value from a NUMERIC cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1035)
+at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:390)
+at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:342)
+at com.AG.dataprovider.ExcelManager.ExcelRead(ExcelManager.java:24)
+at com.AG.test.automation.testscripts.basic.SearchCustomers.listCustomersWithSearch(SearchCustomers.java:39)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listCustomersWithSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.AG.test.automation.testscripts.basic.SearchCustomers@6f1fba17]" name="tearDown" is-config="true" duration-ms="12056" started-at="2020-02-03T12:37:28 IST" finished-at="2020-02-03T12:37:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AG.test.automation.testscripts.basic.SearchCustomers -->
+      <class name="com.AG.test.automation.testscripts.basic.LoginTest">
+        <test-method status="PASS" signature="initialiseBaseSetup()[pri:0, instance:com.AG.test.automation.testscripts.basic.LoginTest@185d8b6]" name="initialiseBaseSetup" is-config="true" duration-ms="7911" started-at="2020-02-03T12:37:04 IST" finished-at="2020-02-03T12:37:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBaseSetup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.AG.test.automation.testscripts.basic.LoginTest@185d8b6]" name="login" duration-ms="11208" started-at="2020-02-03T12:37:12 IST" finished-at="2020-02-03T12:37:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.AG.test.automation.testscripts.basic.LoginTest -->
+    </test> <!-- registration -->
+  </suite> <!-- AGENTPLUS TEST REPORTS -->
+</testng-results>

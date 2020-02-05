@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="AGENTPLUS TEST REPORTS" verbose="10" parallel="none"
+	thread-count="3">
+	<test name="registration">
+		<parameter name="browserType" value="gecko"></parameter>
+		<classes>
+			<class name="com.AG.test.automation.testscripts.basic.SearchCustomers"></class>
+			<!-- <class name="com.AG.test.automation.testscripts.basic.LoginTest"></class> -->
+		</classes>
+	</test>
+</suite>
